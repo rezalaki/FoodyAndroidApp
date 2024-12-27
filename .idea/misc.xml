@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/background_half_circle.xml" value="0.1635" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_banner_receive_code.xml" value="0.2535" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_banner_send_sms.xml" value="0.2535" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_exit.xml" value="0.2235" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_from_arioidea.xml" value="0.26" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_line_dashed.xml" value="0.1635" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_line_dashed_with_circle.xml" value="0.2035" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_map.xml" value="0.254" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_maps.xml" value="0.169" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_search.xml" value="0.26" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_trumpet.xml" value="0.2295" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/ic_vertical_dashed_line.xml" value="0.2235" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_cirlce_grey_dark_bordered.xml" value="0.1865" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_input_grey_rounded.xml" value="0.169" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_line_dashed.xml" value="0.2035" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_rectangle_bottom_rounded16.xml" value="0.2105" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_rectangle_grey_rounded.xml" value="0.2465" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_rectangle_grey_rounded12.xml" value="0.2035" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_rectangle_rounded8.xml" value="0.2035" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_rectangle_top_rounded16.xml" value="0.2035" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_rounded16_bordered.xml" value="0.26" />
+        <entry key="..\:/ModelYab/app/src/main/res/drawable/shape_rounded8_bordered.xml" value="0.2035" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/activity_home.xml" value="0.22027027027027027" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/activity_main.xml" value="0.2546875" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/activity_publish_add.xml" value="0.268" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_add_details.xml" value="0.3" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_chats.xml" value="0.22027027027027027" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_dialog_agreements.xml" value="0.36" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_dialog_delete_add.xml" value="0.22027027027027027" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_dialog_edit_profile.xml" value="0.22027027027027027" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_dialog_exit_profile.xml" value="0.22027027027027027" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_invite.xml" value="0.268" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_manage_add.xml" value="0.3" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_my_adds.xml" value="0.22027027027027027" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_payment.xml" value="0.268" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_profile.xml" value="0.3" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_receive_sms.xml" value="0.268" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_register.xml" value="0.3" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_saved_adds.xml" value="0.36" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_search.xml" value="0.3" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_send_sms.xml" value="0.2546875" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_splash.xml" value="0.22027027027027027" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_wallet.xml" value="0.268" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_wallet_history.xml" value="0.268" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/fragment_wallet_history_payment.xml" value="0.22027027027027027" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/item_chat.xml" value="0.5" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/item_my_add.xml" value="0.36" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/item_wallet_history.xml" value="0.4" />
+        <entry key="..\:/ModelYab/app/src/main/res/layout/item_wallet_history_receive.xml" value="0.44000000000000006" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -5,11 +5,10 @@ This is an android project I developed in less than 24 hours, just a funny chall
 I will add some other features and may migrate it to Jetpack Compose in future.
 <br>
 <br>
-I used [spoonacular.com](http://spoonacular.com) api to recive data.
+I used [spoonacular.com](http://spoonacular.com) API.
 <br>
-**Do NOT forget** to generate your own API_KEY and replace it with mine.
 <br>
-You can find API_KEY variable in ```util\Constants```
+**Do NOT forget** to generate your own API_KEY and replace it with mine. You can find API_KEY variable in ```util\Constants```
 
 
 ### Screenshots
@@ -20,7 +19,7 @@ You can find API_KEY variable in ```util\Constants```
 </p>
 
 ### Video
-
+https://github.com/user-attachments/assets/470b718b-5b9a-4c41-9230-14a26d81e611
 
 
 ### Tech Stack

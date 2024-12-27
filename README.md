@@ -13,9 +13,11 @@ You can find API_KEY variable in ```util\Constants```
 
 
 ### Screenshots
+<p float="left">
 <img src="https://github.com/rezalaki/FoodyAndroidApp/blob/master/arts/one.jpg?raw=true" alt="screenshot-one" width="250" />
 <img src="https://github.com/rezalaki/FoodyAndroidApp/blob/master/arts/two.jpg?raw=true" alt="screenshot-two" width="250" />
 <img src="https://github.com/rezalaki/FoodyAndroidApp/blob/master/arts/three.jpg?raw=true" alt="screenshot-three" width="250" />
+</p>
 
 ### Video
 

@@ -9,12 +9,14 @@ import com.google.gson.GsonBuilder
 import com.rezalaki.foody.data.api.ApiServices
 import com.rezalaki.foody.data.api.RequestInterceptor
 import com.rezalaki.foody.util.Constants
+import com.rezalaki.foody.util.ifIsDebugMode
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
@@ -39,7 +41,16 @@ class ApiModule {
             .readTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
             .connectTimeout(Constants.TIMEOUT_SECONDS, TimeUnit.SECONDS)
 
-        httpClient.addNetworkInterceptor(RequestInterceptor())
+        httpClient.apply {
+            addNetworkInterceptor(RequestInterceptor())
+
+            ifIsDebugMode {
+                val loggerInterceptor = HttpLoggingInterceptor().apply {
+                    level = HttpLoggingInterceptor.Level.BODY
+                }
+                addNetworkInterceptor(loggerInterceptor)
+            }
+        }
 
         return httpClient.build()
     }

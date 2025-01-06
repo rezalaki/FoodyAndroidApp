@@ -19,5 +19,9 @@
         android:id="@+id/detailsFragment"
         android:name="com.rezalaki.foody.ui.details.DetailsFragment"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="foodId"
+            app:argType="integer" />
+    </fragment>
 </navigation>

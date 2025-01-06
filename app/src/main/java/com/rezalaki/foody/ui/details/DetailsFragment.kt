@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import coil.load
 import com.rezalaki.foody.R
 import com.rezalaki.foody.databinding.FragmentDetailsBinding
@@ -22,9 +23,10 @@ class DetailsFragment : BaseFragment() {
     private val binding get() = _binding!!
 
     private val viewModel: DetailsViewModel by viewModels()
+    private val args: DetailsFragmentArgs by navArgs()
 
     private val foodId by lazy {
-        arguments?.getInt(Constants.ID)
+        args.foodId
     }
 
     override fun onCreateView(
@@ -38,7 +40,7 @@ class DetailsFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.loadDetails(foodId!!)
+        viewModel.loadDetails(foodId)
         viewModel.uiState.observe(viewLifecycleOwner) { ui ->
             when (ui) {
                 is DetailsUiState.LoadFailed -> {
@@ -61,7 +63,7 @@ class DetailsFragment : BaseFragment() {
                 is DetailsUiState.LoadSuccess -> {
                     binding.btnRetry.gone()
                     binding.pbLoading.gone()
-                    ui.data.also {food ->
+                    ui.data.also { food ->
                         binding.tvToolbarTitle.text = food.title?.take(15)
                         binding.ivBanner.load(food.image){
                             crossfade(true)
@@ -86,7 +88,7 @@ class DetailsFragment : BaseFragment() {
         }
 
         binding.btnRetry.setOnClickListener {
-            viewModel.loadDetails(foodId!!)
+            viewModel.loadDetails(foodId)
         }
 
     }

@@ -61,10 +61,7 @@ class HomeFragment : BaseFragment() {
                         layoutManager = LinearLayoutManager(requireContext())
                         adapter = HomeRvAdapter(ui.data.results) { clickedFoodId ->
                             findNavController().navigate(
-                                R.id.action_homeFragment_to_detailsFragment3,
-                                bundleOf(
-                                    Pair(Constants.ID, clickedFoodId)
-                                )
+                                HomeFragmentDirections.actionHomeFragmentToDetailsFragment3(clickedFoodId)
                             )
                         }
                     }

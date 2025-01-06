@@ -6,7 +6,8 @@ import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.rezalaki.foody.data.api.ApiHandlerState
 import com.rezalaki.foody.data.model.responses.FoodsResponse
-import com.rezalaki.foody.data.repository.FoodsListRepository
+import com.rezalaki.foody.data.repository.foodList.FoodListRepository
+import com.rezalaki.foody.data.repository.foodList.FoodsListRepositoryImpl
 import com.rezalaki.foody.ui.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
@@ -16,7 +17,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val foodsListRepository: FoodsListRepository,
+    private val foodsListRepository: FoodListRepository,
     private val isNetworkAvailable: Boolean
 ) : BaseViewModel() {
 

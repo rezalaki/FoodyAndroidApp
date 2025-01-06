@@ -1,8 +1,8 @@
-package com.rezalaki.foody.data.repository
+package com.rezalaki.foody.data.repository.foodList
 
 import com.rezalaki.foody.data.api.ApiHandler
 import com.rezalaki.foody.data.api.ApiServices
-import com.rezalaki.foody.data.model.responses.FoodsInfo
+import com.rezalaki.foody.data.model.responses.FoodsResponse
 import dagger.hilt.android.scopes.ActivityRetainedScoped
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -13,27 +13,30 @@ import javax.inject.Inject
 
 
 @ActivityRetainedScoped
-class FoodInfoRepository @Inject constructor(
+class FoodsListRepositoryImpl @Inject constructor(
     private val api: ApiServices
-) {
-    suspend fun loadFoodInfo(foodId: Int): Flow<ApiHandler<FoodsInfo>> =
-        flow {
-            emit( ApiHandler.loading() )
+) : FoodListRepository{
 
-            val result = api.loadFoodDetail(foodId)
+    override suspend fun loadFoodsList(): Flow<ApiHandler<FoodsResponse>> =
+         flow {
+            emit(
+                ApiHandler.loading()
+            )
+
+            val result = api.loadFoods()
             if (result.isSuccessful) {
-
-                emit( ApiHandler.success(result.body()!!) )
-
+                emit(
+                    ApiHandler.success(result.body()!!)
+                )
             } else {
                 emit(
                     ApiHandler.error("API ERROR")
                 )
             }
-
         }.catch {
             emit(
                 ApiHandler.error("ERROR - ${it.message}")
             )
         }.flowOn(Dispatchers.IO)
+
 }

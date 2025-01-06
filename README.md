@@ -29,6 +29,7 @@ https://github.com/user-attachments/assets/470b718b-5b9a-4c41-9230-14a26d81e611
 - Retrofit + OkHttp
 - Coroutines + Flow
 - Repository Pattern
+- Navigation Component
 - Single Activity
 
 
